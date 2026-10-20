@@ -20,7 +20,7 @@ require (
 	github.com/vmware-tanzu/vm-operator/api v1.9.1-0.20260502065817-4ee333ccd54c
 	github.com/vmware/govmomi v0.56.0
 	github.com/vmware/vsphere-automation-sdk-go/lib v0.7.0
-	github.com/vmware/vsphere-automation-sdk-go/runtime v0.7.0
+	github.com/vmware/vsphere-automation-sdk-go/runtime v0.8.0
 	github.com/vmware/vsphere-automation-sdk-go/services/nsxt v0.12.0
 	golang.org/x/net v0.59.0
 	gopkg.in/gcfg.v1 v1.2.3
