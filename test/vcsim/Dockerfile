@@ -1,5 +1,5 @@
 # Use a dedicated stage to build the vCenter simulator and govc binaries.
-FROM golang:1.11.5 as builder
+FROM golang:1.27.2 as builder
 WORKDIR /go/src
 ENV VCSIM_VERSION=v0.20.0
 RUN go get -d github.com/vmware/govmomi && \
