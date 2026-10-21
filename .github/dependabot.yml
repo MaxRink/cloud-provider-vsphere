@@ -456,3 +456,29 @@ updates:
       update-types:
         - "version-update:semver-major"
         - "version-update:semver-minor"
+- package-ecosystem: docker
+  directories:
+  - /hack/images/ci
+  - /test/vcsim
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 5
+  groups:
+    routine-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
+- package-ecosystem: helm
+  directory: /charts/vsphere-cpi
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 5
+  groups:
+    routine-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
