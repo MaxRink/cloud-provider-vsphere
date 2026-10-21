@@ -7,7 +7,7 @@ RUN go get -d github.com/vmware/govmomi && \
     make -C github.com/vmware/govmomi/govc && \
     make -C github.com/vmware/govmomi/vcsim
 
-FROM debian:stretch-20190204-slim
+FROM debian:stretch-20220622-slim
 LABEL "maintainer" "Andrew Kutz <akutz@vmware.com>"
 
 # Update the CA certificates and clean up the apt cache.
